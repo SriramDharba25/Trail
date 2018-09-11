@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Decentralized Talent Management System</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./app.js"></script>
+</head>
+
+
+<body>
+<div class="container">
+ <h1>Enter Job Requirement</h1>
+  <div class="container">
+  <div class="row">
+  <div style="display: none;" class="alert alert-success" id="msg"></div>
+
+   <form class="form-horizontal col-sm-5" id="add-item-to-store">
+   <div class="form-group">
+   <label for="job-position" class="col-sm-2 control-label">JobTitle</label>
+   <div class="col-sm-10">
+  <input type="text" name="job-position" class="form-control" id="job-position" placeholder="Java Developer" required="required"></input>
+
+</div>
+</div>
+
+<div class="form-group">
+     <label for="company" class="col-sm-2 control-label">Company</label>
+     <div class="col-sm-10">
+ <input type="text" name="company" class="form-control" id="company" placeholder="Accenture solutions PVT.Limited" required="required"></input>
+      </div>
+    </div>
+
+     <div class="form-group">
+     <label for="job-description" class="col-sm-2 control-label">JobDescription</label>
+     <div class="col-sm-10">
+     <textarea class="form-control" name="job-description" rows="8" id="job-description" placeholder="Enter detailed job description" required="required"></textarea>
+      </div>
+    </div>
+
+
+     <div class="form-group">
+
+    <label for="job-technology-keyword" class="col-sm-2 control-label">Technology</label>
+     <div class="col-sm-10">
+       <select class="form-control" name="job-technology-keyword" id="job-technology">
+        <option>Java</option>
+        <option>DotNet</option>
+        <option>Python</option>
+        <option>SAP-ABAP</option>
+        <option>SAP-Finance</option>
+        <option>PeopleSoft</option>
+        <option>Testing</option>
+        <option>Hadoop</option>
+        <option>Spark</option>
+        <option>Scala</option>
+       </select>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="job-experience" class="col-sm-2 control-label">Job-Experience</label>
+      <div class="col-sm-10">
+       <input type="text" class="form-control" name="job-experience" id="job-experience" placeholder="3-5yrs" required="required"></input>
+      </div>
+     </div>
+
+     <div class="form-group">
+      <label for="job-CTC" class="col-sm-2 control-label">job-CTC</label>
+      <div class="col-sm-10">
+       <input type="text" class="form-control" name="job-CTC" id="job-experience" placeholder="10-20 LPA" ></input>
+      </div>
+     </div>
+
+
+     <div class="form-group">
+      <label for="job-location" class="col-sm-2 control-label">Job Location</label>
+      <div class="col-sm-10">
+       <input type="text" class="form-control" name="job-location" id="job-location" required="required"></input>
+      </div>
+     </div>
+
+     <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+       <button type="submit" class="btn btn-primary">Add Job To Portal</button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+
+</body>
+
+</html>
